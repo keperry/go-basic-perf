@@ -1,0 +1,17 @@
+(pprof) top50
+Showing nodes accounting for 120ms, 100% of 120ms total
+      flat  flat%   sum%        cum   cum%
+     110ms 91.67% 91.67%      110ms 91.67%  syscall.Syscall
+      10ms  8.33%   100%       10ms  8.33%  runtime.freedefer
+         0     0%   100%      120ms   100%  _/go-basic-perf/perf.BenchmarkFact20
+         0     0%   100%      120ms   100%  _/go-basic-perf/perf.benchmarkFact
+         0     0%   100%      120ms   100%  fmt.Fprintf
+         0     0%   100%      120ms   100%  fmt.Printf
+         0     0%   100%      120ms   100%  internal/poll.(*FD).Write
+         0     0%   100%      120ms   100%  os.(*File).Write
+         0     0%   100%      120ms   100%  os.(*File).write
+         0     0%   100%       10ms  8.33%  runtime.deferreturn
+         0     0%   100%      110ms 91.67%  syscall.Write
+         0     0%   100%      110ms 91.67%  syscall.write
+         0     0%   100%      120ms   100%  testing.(*B).launch
+         0     0%   100%      120ms   100%  testing.(*B).runN

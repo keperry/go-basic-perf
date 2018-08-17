@@ -1,16 +1,19 @@
 package perf
 
 import (
-	"fmt"
 	"testing"
-)
+	)
 
-func benchmarkFact (b *testing.B, num int) {
+var result int
+
+func benchmarkFact(b *testing.B, num int) {
+	var y int
 	for x := 0; x < b.N; x++ {
 		//run my awesome test method
-		x := Factorial(num)
-		fmt.Printf("X = %d\n", x)
+		y = Factorial(num)
+		//fmt.Printf("Y = %d\n", y)
 	}
+	result = y
 }
 
 func BenchmarkFact5(b *testing.B) {

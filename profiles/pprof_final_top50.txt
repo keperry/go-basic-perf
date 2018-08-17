@@ -1,0 +1,27 @@
+(pprof) top50
+Showing nodes accounting for 1.31s, 100% of 1.31s total
+      flat  flat%   sum%        cum   cum%
+        1s 76.34% 76.34%         1s 76.34%  _/go-basic-perf/perf.Factorial
+     0.15s 11.45% 87.79%      0.15s 11.45%  runtime.duffcopy
+     0.12s  9.16% 96.95%      0.12s  9.16%  runtime.usleep
+     0.03s  2.29% 99.24%      1.03s 78.63%  _/go-basic-perf/perf.benchmarkFact
+     0.01s  0.76%   100%      0.01s  0.76%  runtime.mach_semaphore_signal
+         0     0%   100%      1.03s 78.63%  _/go-basic-perf/perf.BenchmarkFact20
+         0     0%   100%      0.01s  0.76%  runtime.goready
+         0     0%   100%      0.01s  0.76%  runtime.goready.func1
+         0     0%   100%      0.01s  0.76%  runtime.goroutineReady
+         0     0%   100%      0.01s  0.76%  runtime.mach_semrelease
+         0     0%   100%      0.15s 11.45%  runtime.morestack
+         0     0%   100%      0.12s  9.16%  runtime.mstart
+         0     0%   100%      0.12s  9.16%  runtime.mstart1
+         0     0%   100%      0.15s 11.45%  runtime.newstack
+         0     0%   100%      0.01s  0.76%  runtime.notewakeup
+         0     0%   100%      0.01s  0.76%  runtime.ready
+         0     0%   100%      0.01s  0.76%  runtime.semawakeup
+         0     0%   100%      0.01s  0.76%  runtime.startm
+         0     0%   100%      0.12s  9.16%  runtime.sysmon
+         0     0%   100%      0.01s  0.76%  runtime.systemstack
+         0     0%   100%      0.01s  0.76%  runtime.timerproc
+         0     0%   100%      0.01s  0.76%  runtime.wakep
+         0     0%   100%      1.03s 78.63%  testing.(*B).launch
+         0     0%   100%      1.03s 78.63%  testing.(*B).runN
